@@ -2,12 +2,12 @@
 layout: layout.html
 ---
 
-## Thanks for Coming!
+## sadbumblebee
 
-Welcome to our humble webcam.
+Appreciate you coming by.
 
-Allow us to introduce ourselves. We are healthy happy chicks from Oakland. Our names are George, Martha, and Hilda.
+I excel at storytelling. I translate ideas through mediums like motion graphics, dataviz, and illustrations to create memorable experiences.
 
-We're so happy to have you here. Please come back time and again for updates.
+I value trust, communication, and action.
 
-Have a wonderful rest of your day!
+If you wanna work together, that’s great. Take a look at my history.

@@ -5,7 +5,8 @@ const Metalsmith  = require('metalsmith');
 const markdown    = require('metalsmith-markdown');
 const layouts     = require('metalsmith-layouts');
 const permalinks  = require('metalsmith-permalinks');
-const less        = require('metalsmith-less');
+// const less        = require('metalsmith-less');
+const sass        = require('metalsmith-sass');
 const watch       = require('metalsmith-watch');
 const serve       = require('metalsmith-serve');
 
@@ -19,7 +20,7 @@ const layoutsOptions = {
 };
 
 const lessOptions = {
-  pattern: ['**/milligram.less']
+  pattern: ['**/*.less']
 };
 
 // #################
@@ -27,8 +28,8 @@ const lessOptions = {
 // #################
 Metalsmith(__dirname)
   .metadata({
-    title: "Hot Chicks, Down to Lay",
-    description: "Watch these little chickens run wild.",
+    title: "sadbumblebee",
+    description: "sadbumblebee",
     generator: "Metalsmith",
     url: "http://www.metalsmith.io/"
   })
@@ -37,7 +38,10 @@ Metalsmith(__dirname)
   .clean(false)
   .use(markdown())
   .use(permalinks())
-  .use(less(lessOptions))
+  // .use(less(lessOptions))
+  .use(sass({
+    outputDir: 'css/'   // This changes the output dir to "build/css/" instead of "build/scss/"
+  }))
   .use(layouts(layoutsOptions))
   .use(serve())
   .use(watch({
