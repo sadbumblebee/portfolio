@@ -1,3 +1,3 @@
 # Portfolio and Blog
 
-Code for my portfolio.
+Metalsmith repo for my portfolio.

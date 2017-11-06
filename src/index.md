@@ -2,12 +2,16 @@
 layout: layout.html
 ---
 
-## sadbumblebee
+# sadbumblebee
 
-Appreciate you coming by.
+## Appreciate you coming by.
 
-I excel at storytelling. I translate ideas through mediums like motion graphics, dataviz, and illustrations to create memorable experiences.
+## I excel at storytelling. I translate ideas through mediums like motion graphics, dataviz, and illustrations to create memorable experiences.
 
-I value trust, communication, and action.
+## I value trust, communication, and action.
 
-If you wanna work together, that’s great. Take a look at my history.
+## If you wanna work together, that’s great. Take a look at my [history](/portfolio).
+
+---
+
+#### [twitter](https://twitter.com/sadbumblebee)  .  [github](https://github.com/sadbumblebee)  .  [instagram](https://instagram.com/sadbumblebee) . [email](mailto:sadbumblebee@gmail.com)
