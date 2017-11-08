@@ -4,7 +4,7 @@ layout: portfolio.html
 
 # Recent Work
 
-### My work experience has taken me from making everything from motion graphics, white board videos, interactive data visualizations, to illustrations.
+### My work experience has taken me from making motion graphics, whiteboard videos, interactive maps, data visualizations, to illustrations.
 
 ### Regardless of the project, I appreciate new challenges.
 
