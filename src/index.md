@@ -10,7 +10,7 @@ layout: layout.html
 
 ## I value trust, communication, and action.
 
-## If you wanna work together, that’s great. Take a look at my [history](/portfolio).
+## If you wanna work together, that’s great. Take a look at my [projects](/portfolio).
 
 ---
 
