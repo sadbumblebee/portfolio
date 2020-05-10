@@ -1,22 +1,19 @@
 // #################
 // ###  Plugins  ###
 // #################
-const Metalsmith  = require('metalsmith');
-const markdown    = require('metalsmith-markdown');
-const layouts     = require('metalsmith-layouts');
-const permalinks  = require('metalsmith-permalinks');
-const sass        = require('metalsmith-sass');
-const watch       = require('metalsmith-watch');
-const serve       = require('metalsmith-serve');
+const fsExtra = require('fs-extra');
 
-// #################
-// ###  Options  ###
-// #################
-const layoutsOptions = {
-  engine: 'handlebars',
-  partials: 'layouts/partials',
-  rename: true
-}
+// Metalsmith
+var Metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var permalinks = require('metalsmith-permalinks');
+var pug = require('metalsmith-pug');
+var ignore = require('metalsmith-ignore');
+var stylus = require('metalsmith-stylus');
+var serve = require('metalsmith-serve');
+var browserSync = require('metalsmith-browser-sync');
+var browserify = require('metalsmith-browserify')
+
 // #################
 // ###   Build   ###
 // #################
@@ -28,24 +25,30 @@ Metalsmith(__dirname)
     url: "http://www.metalsmith.io/"
   })
   .source('./src')
-  .destination('./docs')
+  .destination('./build')
   .clean(false)
   .use(markdown())
   .use(permalinks())
-
-  .use(sass({
-    outputDir: 'css/'   // This changes the output dir to "build/css/" instead of "build/scss/"
+  .use(ignore([
+    'includes/*',
+    'css/import/*'
+  ]))
+  .use(pug({ useMetadata: true }))
+  .use(stylus({
+    master: 'site.styl',
+    output: 'site.css',
+    outputDir: '.'
   }))
-  .use(layouts(layoutsOptions))
+  .use(browserSync({
+    server: 'build',
+    files: ['src/**/*']
+  }))
+  .use(browserify({
+    'entries': [
+      'js/app.js'
+    ]
+  }))
   .use(serve())
-  .use(watch({
-    paths: {
-      '${source}/**/*': true,
-      'layouts/**/*': '**/*.md'
-    },
-    livereload: true,
-    })
-  )
-  .build(function(err, files) {
+  .build(function (err, files) {
     if (err) { throw err; }
   });
