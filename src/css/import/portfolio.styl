@@ -1,0 +1,134 @@
+.features-container, .feature-container
+    position relative
+
+p&.intro
+    font-size 1.5em
+
+.feature
+    margin 5em 0 2.5em
+    display block
+    width 100%
+    position relative
+
+.annotation
+    position absolute
+    font-family $sans-dos
+    font-size 16px
+    color $primary
+    line-height 18px
+    max-width 200px
+    top 0px
+    padding 20px 10px
+    transition color 250ms ease-in
+
+    &:hover
+        color $secondary
+        cursor pointer
+
+    &.right
+        right -240px
+        text-align left
+
+        &:after
+            content ' '
+            background-image url('/assets/left.png')
+            background-size 38px 20px
+            margin 10px auto 0 -15px
+            display block
+            width 38px
+            height 20px
+    
+    &.left
+        left -240px
+        text-align right
+
+        &:after
+            content ' '
+            background-image url('/assets/right.png')
+            background-size 38px 20px
+            margin 10px -15px 0 auto
+            display block
+            width 38px
+            height 20px
+
+.feature--image
+    max-width $column
+    height 160px
+    width auto
+    background-color $bg-color
+    background-blend-mode multiply
+    background-size contain
+    background-repeat no-repeat
+    background-position center
+    position relative
+    margin-bottom 2em
+    transition all 250ms ease-in
+    // border-bottom 1px solid $primary
+
+    &:hover
+        cursor pointer
+        background-color rgba(215, 254, 255, 0)
+
+.feature--hed
+    position absolute
+    bottom 0px
+    left 0px
+    background-color rgba(215, 254, 255, .75)
+    padding 5px 10px 5px 0px
+    line-height 1em
+    font-size 1.25em
+    font-family $sans-dos
+    font-weight $heavy
+    color $primary
+
+.feature--byline
+    position absolute
+    width 100%
+    bottom -5px
+
+    div
+        position absolute
+        font-size 12px
+        font-family $sans
+        font-weight $medium
+        color $secondary
+
+.byline--date
+    left 0
+
+.byline--source
+    right 0
+
+.feature--copy
+    font-family $sans
+    font-size 1.2em
+    color $primary
+    font-weight $medium
+    line-height 1.3em
+
+@media all and (max-width: 1025px)
+    .annotation
+        position relative
+        display none
+        max-width 100%
+        padding 0
+        
+        &.left
+            left unset
+
+            &:after
+                display none
+
+        &.right
+            right unset
+            text-align right
+
+            &:after
+                display none
+
+@media all and (max-width: $column)
+    p&.intro
+        font-size 1.2em
+
+    .feature
+        margin 2.75em 0 2em

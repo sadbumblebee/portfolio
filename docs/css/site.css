@@ -1,0 +1,489 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500");
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+hr {
+  width: 50%;
+  border: 0;
+  border-top: 5px solid #9bd1d1;
+  margin: 0 0 auto;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  color: #003233;
+}
+h1 {
+  font-weight: 700;
+  font-size: 4em;
+  background: linear-gradient(#9bd1d1, #9bd1d1) bottom left no-repeat;
+  background-size: 50% 5px;
+}
+p {
+  font-weight: 400;
+  font-size: 2.5em;
+  line-height: 1.25em;
+}
+ul {
+  font-size: 2.25em;
+  color: #9bd1d1;
+}
+a {
+  color: #9bd1d1;
+  text-decoration: none;
+  transition: all 250ms ease-in;
+}
+a:hover {
+  color: #003233;
+}
+@media all and (max-width: 640px) {
+  h1 {
+    font-size: 2.75em;
+    background-size: 50% 3px;
+  }
+  p {
+    font-size: 1.75em;
+  }
+  ul {
+    font-size: 1.5em;
+  }
+  hr {
+    border-top: 3px solid #9bd1d1;
+  }
+}
+body {
+  background-color: #d7feff;
+}
+.header {
+  width: 100%;
+  height: 10em;
+  background-color: #fefefe;
+  border-bottom: 5px solid #9bd1d1;
+  position: relative;
+}
+.content-container {
+  width: 100%;
+}
+.content {
+  margin: 0 auto;
+  max-width: 640px;
+}
+ul {
+  text-transform: lowercase;
+  padding: 0;
+}
+ul li {
+  display: inline-block;
+  margin-left: -0.15em;
+}
+ul li:first-child {
+  margin: unset;
+}
+ul li::before {
+  content: '\00a0';
+}
+ul li:first-child::before {
+  content: '';
+}
+ul li::after {
+  content: '\00a0.';
+}
+ul li:last-child::after {
+  content: '';
+}
+footer p {
+  font-size: 14px;
+  text-align: right;
+  color: #9bd1d1;
+}
+.breadcrumb {
+  position: absolute;
+  left: 10px;
+  bottom: -35px;
+  color: #9bd1d1;
+  font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+@media all and (max-width: 640px) {
+  .content {
+    padding: 0 10px;
+  }
+  .header {
+    border-bottom: 3px solid #9bd1d1;
+  }
+}
+.features-container,
+.feature-container {
+  position: relative;
+}
+p.intro {
+  font-size: 1.5em;
+}
+.feature {
+  margin: 5em 0 2.5em;
+  display: block;
+  width: 100%;
+  position: relative;
+}
+.annotation {
+  position: absolute;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #003233;
+  line-height: 18px;
+  max-width: 200px;
+  top: 0px;
+  padding: 20px 10px;
+  transition: color 250ms ease-in;
+}
+.annotation:hover {
+  color: #9bd1d1;
+  cursor: pointer;
+}
+.annotation.right {
+  right: -240px;
+  text-align: left;
+}
+.annotation.right:after {
+  content: ' ';
+  background-image: url("/assets/left.png");
+  background-size: 38px 20px;
+  margin: 10px auto 0 -15px;
+  display: block;
+  width: 38px;
+  height: 20px;
+}
+.annotation.left {
+  left: -240px;
+  text-align: right;
+}
+.annotation.left:after {
+  content: ' ';
+  background-image: url("/assets/right.png");
+  background-size: 38px 20px;
+  margin: 10px -15px 0 auto;
+  display: block;
+  width: 38px;
+  height: 20px;
+}
+.feature--image {
+  max-width: 640px;
+  height: 160px;
+  width: auto;
+  background-color: #d7feff;
+  background-blend-mode: multiply;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  margin-bottom: 2em;
+  transition: all 250ms ease-in;
+}
+.feature--image:hover {
+  cursor: pointer;
+  background-color: rgba(215,254,255,0);
+}
+.feature--hed {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(215,254,255,0.75);
+  padding: 5px 10px 5px 0px;
+  line-height: 1em;
+  font-size: 1.25em;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #003233;
+}
+.feature--byline {
+  position: absolute;
+  width: 100%;
+  bottom: -5px;
+}
+.feature--byline div {
+  position: absolute;
+  font-size: 12px;
+  font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-weight: 400;
+  color: #9bd1d1;
+}
+.byline--date {
+  left: 0;
+}
+.byline--source {
+  right: 0;
+}
+.feature--copy {
+  font-family: 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.2em;
+  color: #003233;
+  font-weight: 400;
+  line-height: 1.3em;
+}
+@media all and (max-width: 1025px) {
+  .annotation {
+    position: relative;
+    display: none;
+    max-width: 100%;
+    padding: 0;
+  }
+  .annotation.left {
+    left: unset;
+  }
+  .annotation.left:after {
+    display: none;
+  }
+  .annotation.right {
+    right: unset;
+    text-align: right;
+  }
+  .annotation.right:after {
+    display: none;
+  }
+}
+@media all and (max-width: 640px) {
+  p.intro {
+    font-size: 1.2em;
+  }
+  .feature {
+    margin: 2.75em 0 2em;
+  }
+}
+.sbb-container {
+  margin: 0 auto;
+  max-width: 300px;
+  padding: 1em 2em 6em 0;
+  position: relative;
+  width: 100%;
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@-moz-keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@-webkit-keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@-o-keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+  }
+  65% {
+    transform: translate(0, 5px);
+  }
+  to {
+    transform: translate(0, 0px);
+  }
+}

@@ -1,0 +1,18 @@
+// SBB animation
+.sbb-container
+    margin 0 auto
+    max-width 300px
+    padding 1em 2em 6em 0
+    position relative
+    width 100%
+
+.floating
+    animation-name: floating
+    animation-duration: 2s
+    animation-iteration-count: infinite
+    animation-timing-function: ease-in-out
+
+@keyframes floating
+    from { transform: translate(0,  0px); }
+    65%  { transform: translate(0, 5px); }
+    to   { transform: translate(0, -0px); }

@@ -22,10 +22,10 @@ Metalsmith(__dirname)
     title: "sadbumblebee",
     description: "sadbumblebee",
     generator: "Metalsmith",
-    url: "http://www.metalsmith.io/"
+    url: "https://www.sadbumblebee.com/"
   })
   .source('./src')
-  .destination('./build')
+  .destination('./docs')
   .clean(false)
   .use(markdown())
   .use(permalinks())
@@ -40,12 +40,13 @@ Metalsmith(__dirname)
     outputDir: '.'
   }))
   .use(browserSync({
-    server: 'build',
+    server: 'docs',
     files: ['src/**/*']
   }))
   .use(browserify({
     'entries': [
-      'js/app.js'
+      'js/app.js',
+      'js/portfolio.js'
     ]
   }))
   .use(serve())

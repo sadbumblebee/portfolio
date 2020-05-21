@@ -1,14 +1,52 @@
 // Typography
 
-h1, h2, h3, p
-    font-family 'Nunito', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif
+
+// 
+// TODO: var for min => em size
+// 
+
+hr
+    width 50%
+    border 0
+    border-top $border solid $secondary
+    margin 0 0 auto
+
+h1, h2, h3, p, ul
+    font-family $sans
     color $primary
 
 h1
-    font-weight 700
+    font-weight $heavy
     font-size 4em
+    background linear-gradient($secondary, $secondary) bottom left no-repeat
+    background-size 50% $border
 
 p
-    font-weight 300
+    font-weight $medium
     font-size 2.5em
     line-height 1.25em
+
+ul
+    font-size 2.25em
+    color $secondary
+
+a
+    color $secondary
+    text-decoration none
+    transition all 250ms ease-in
+
+    &:hover
+        color $primary
+
+// Smaller screens
+
+@media all and (max-width: $column)
+    h1
+        font-size 2.75em
+        background-size 50% $border-sm
+    p
+        font-size 1.75em
+    ul
+        font-size 1.5em
+    hr
+        border-top $border-sm solid $secondary
