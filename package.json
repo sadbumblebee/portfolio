@@ -2,6 +2,7 @@
   "name": "sadbumblebee",
   "private": true,
   "dependencies": {
+    "d3-selection": "^1.4.1",
     "fs-extra": "^9.0.0",
     "lodash.assign": "^4.2.0",
     "metalsmith": "^2.1.0",
