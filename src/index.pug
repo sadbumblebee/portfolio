@@ -6,7 +6,8 @@ include includes/head.pug
 //-----------------------------
 .content-container
     .content
-        h1 sadbumblebee
+        h1!='sadbumblebee'
+            - console.log(locals.description)
         .desc
             p Appreciate the visit.
             p I am a journalist. I create memorable coverage through dataviz, motion graphics, and illustrations.

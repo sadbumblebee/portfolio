@@ -3,8 +3,8 @@ html
 	head
 		meta(charset='UTF-8')
 		meta(http-equiv='X-UA-Compatible', content='IE=edge')
-		title Daniel Wolfe, data journalist
-		meta(name='description', content='Hey there metadata, nice to be a little preview text here. Whether this little thumb is in Slack or Twitter, I\'m happy to be here 👋.')
+		title!=locals.title
+		meta(name='description', content!=locals.description)
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		link(rel='stylesheet', href='css/site.css')
 		link(rel="icon" href="/favicon.ico")

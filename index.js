@@ -3,6 +3,11 @@
 // #################
 const fsExtra = require('fs-extra');
 
+// Local contewnt
+var content = JSON.parse(
+  fsExtra.readFileSync(__dirname + '/src/content.json')
+)
+
 // Metalsmith
 var Metalsmith = require('metalsmith');
 var markdown = require('metalsmith-markdown');
@@ -18,11 +23,14 @@ var browserify = require('metalsmith-browserify')
 // ###   Build   ###
 // #################
 Metalsmith(__dirname)
+// Available in pug as the object: locals
   .metadata({
-    title: "sadbumblebee",
-    description: "sadbumblebee",
+    title: "Daniel Wolfe, data journalist",
+    description: "Hey there metadata, nice to be a little preview text here. Whether this little thumb is in Slack or Twitter, I\'m happy to be here 👋.",
+    thumb: 'assets/some-url.png',
     generator: "Metalsmith",
-    url: "https://www.sadbumblebee.com/"
+    url: "https://www.sadbumblebee.com/",
+    content: content
   })
   .source('./src')
   .destination('./docs')
@@ -47,7 +55,10 @@ Metalsmith(__dirname)
     'entries': [
       'js/app.js',
       'js/portfolio.js'
-    ]
+    ],
+    'browserifyOptions': {
+      'debug': true
+    }
   }))
   .use(serve())
   .build(function (err, files) {

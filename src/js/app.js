@@ -9,7 +9,7 @@ _.assign = require('lodash.assign');
 
 
 function init() {
-    console.log('footer js')
+    // console.log('footer js')
 }
 
 init();
