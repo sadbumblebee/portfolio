@@ -31,7 +31,7 @@
         "date": "April 2019",
         "source": "Quartz",
         "url": "https://qz.com/1582395/how-accurate-are-at-home-genetic-tests-like-23andme/",
-        "annotation": "Won a Society of News Design award for this",
+        "annotation": "Won a Society of News Design (SND) award for this",
         "ann_url": "https://www.snd.org/bodd/2020/02/10/2019-results/",
         "copy": "Showing how we can use classic American literature to show the shortcomings of direct-to-consumer genetic testing."
     },
@@ -41,9 +41,19 @@
         "date": "February 2019",
         "source": "Quartz",
         "url": "https://qz.com/quartzy/1546260/get-a-lego-minifigure-head-to-match-any-emotion/",
-        "annotation": "This also won an award from the Society of News Design.",
+        "annotation": "This also won an award from SND.",
         "ann_url": "https://www.snd.org/bodd/2020/02/10/2019-results/",
         "copy": "This algorithm returns a LEGO face to you if you tell it how you feel. I used survey data on thousands of LEGO faces to make this bit of internet magic possible."
+    },
+    {
+        "hed": "The fight for water can push nations apart—or bring them together",
+        "image": "shallow-waters.png",
+        "date": "August 2018",
+        "source": "Quartz",
+        "url": "https://qz.com/1353831/in-a-warming-world-the-fight-for-water-can-push-nations-apart-or-bring-them-together/",
+        "annotation": "A citation of excellence from the Morley Safer Award for Outstanding Reporting 2019 and won bronze in long-form narrative from SND.",
+        "ann_url": "https://morleysaferaward.briscoecenter.org/2019-morley-safer-award-winners/",
+        "copy": "Scroll-based design, annotated illustrated maps, and timelapse satellite imagery provide context to the disputes over underground water."
     },
     {
         "hed": "Apple HQ timelapse from space",

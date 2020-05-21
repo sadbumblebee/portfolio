@@ -3,7 +3,7 @@
 // #################
 const fsExtra = require('fs-extra');
 
-// Local contewnt
+// Local content
 var content = JSON.parse(
   fsExtra.readFileSync(__dirname + '/src/content.json')
 )
