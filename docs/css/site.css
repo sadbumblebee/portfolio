@@ -432,58 +432,12 @@ p.intro {
 }
 .sbb-container {
   margin: 0 auto;
-  max-width: 300px;
-  padding: 1em 2em 6em 0;
+  max-width: 640px;
   position: relative;
+  text-align: right;
   width: 100%;
 }
-.floating {
-  animation-name: floating;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-@-moz-keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(0, 5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@-webkit-keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(0, 5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@-o-keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(0, 5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
-}
-@keyframes floating {
-  from {
-    transform: translate(0, 0px);
-  }
-  65% {
-    transform: translate(0, 5px);
-  }
-  to {
-    transform: translate(0, 0px);
-  }
+.sbb-container img {
+  margin-top: 10px;
+  max-width: 190px;
 }

@@ -1,3 +1,3 @@
-# Portfolio and Blog
+# Portfolio
 
 Metalsmith repo for my portfolio.

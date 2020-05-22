@@ -18,16 +18,8 @@
         "copy": "The outdoors offer more than scenery. The sounds of these landscapes are restorative. Using a collection of thousands of hours of field recordings from the US National Parks, we can visit Golden Gate, Sitka, to the Grand Tetons."
     },
     {
-        "hed": "Mexico is illegally destroying protected mangrove trees to build an $8 billion oil refinery",
-        "image": "mangrove.png",
-        "date": "March 2020",
-        "source": "Quartz",
-        "url": "https://qz.com/1807407/mexico-is-illegally-destroying-mangroves-to-build-lopez-obradors-oil-refinery/",
-        "copy": "Satellite images show a landscape razed to accommodate a controversial $8 billion project at the request of Mexico's president Andres Manuel Lopez Obrador. Worked confirming <a href='https://twitter.com/mddeh' target='_blank'>Max de Haldevang's</a> reporting via remote sensing."
-    },
-    {
         "hed": "Moby Dick: Or, the imprecision of genetic testing",
-        "image": "moby.png",
+        "image": "moby.gif",
         "date": "April 2019",
         "source": "Quartz",
         "url": "https://qz.com/1582395/how-accurate-are-at-home-genetic-tests-like-23andme/",
@@ -46,6 +38,30 @@
         "copy": "This algorithm returns a LEGO face to you if you tell it how you feel. I used survey data on thousands of LEGO faces to make this bit of internet magic possible."
     },
     {
+        "hed": "Mexico is illegally destroying protected mangrove trees to build an $8 billion oil refinery",
+        "image": "mangrove.png",
+        "date": "March 2020",
+        "source": "Quartz",
+        "url": "https://qz.com/1807407/mexico-is-illegally-destroying-mangroves-to-build-lopez-obradors-oil-refinery/",
+        "copy": "Satellite images show a landscape razed to accommodate a controversial $8 billion project at the request of Mexico's president Andres Manuel Lopez Obrador. Worked confirming <a href='https://twitter.com/mddeh' target='_blank'>Max de Haldevang's</a> reporting via remote sensing."
+    },
+    {
+        "hed": "Life expectancy in the United States, mapped by neighborhood",
+        "image": "life-expectancy.png",
+        "date": "December 2020",
+        "source": "Quartz",
+        "url": "https://qz.com/1462111/map-what-story-does-your-neighborhoods-life-expectancy-tell/",
+        "copy": "Data from the CDC and analysis by <a href='https://twitter.com/dkopf' target='_blank'>Dan Kopf</a>, this interactive map reveals the health disparities amongst neighborhoods across the US."
+    },
+    {
+        "hed": "The fires in the Amazon were likely set intentionally",
+        "image": "amazon-fires.gif",
+        "date": "August 2019",
+        "source": "Quartz",
+        "url": "https://qz.com/1692804/fires-in-the-amazon-rainforests-were-likely-intentional/",
+        "copy": "Analysis using NASA Goes-16 East and VIIRS/FIRMS data show the Amazon rainforest burning at an unprecedented rate. It's unlikely starting themselves. Rather they may be set by people in an attempt to clear land for cattle ranching."
+    },
+    {
         "hed": "The fight for water can push nations apart—or bring them together",
         "image": "shallow-waters.png",
         "date": "August 2018",
@@ -54,6 +70,14 @@
         "annotation": "A citation of excellence from the Morley Safer Award for Outstanding Reporting 2019 and won bronze in long-form narrative from SND.",
         "ann_url": "https://morleysaferaward.briscoecenter.org/2019-morley-safer-award-winners/",
         "copy": "Scroll-based design, annotated illustrated maps, and timelapse satellite imagery provide context to the disputes over underground water."
+    },
+    {
+        "hed": "Oil exploration detection through satellite imagery",
+        "image": "libya-oil.png",
+        "date": "April 2018",
+        "source": "Planet Labs",
+        "url": "https://www.planet.com/insights/libya-oil-exploration/",
+        "copy": "Scroll-based interactive shows how Planet Labs discovered oil exploration in a remote corner of the Libyan Desert."
     },
     {
         "hed": "Apple HQ timelapse from space",
