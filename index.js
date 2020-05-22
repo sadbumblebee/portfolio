@@ -3,6 +3,9 @@
 // #################
 const fsExtra = require('fs-extra');
 
+// RSS feed
+const RSS_URL = 'https://cms.qz.com/feed/author/dwolfeqz/'
+
 // Local content
 var content = JSON.parse(
   fsExtra.readFileSync(__dirname + '/src/content.json')
@@ -22,12 +25,13 @@ var browserify = require('metalsmith-browserify')
 // #################
 // ###   Build   ###
 // #################
+
 Metalsmith(__dirname)
 // Available in pug as the object: locals
   .metadata({
     title: "Daniel Wolfe, data journalist",
     description: "Hey there metadata, nice to be a little preview text here. Whether this little thumb is in Slack or Twitter, I\'m happy to be here 👋.",
-    thumb: 'assets/some-url.png',
+    thumb: 'assets/sadbumblebee-social.png',
     generator: "Metalsmith",
     url: "https://www.sadbumblebee.com/",
     content: content
