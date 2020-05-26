@@ -1,27 +1,26 @@
-// NPM modules
-var _ = {};
-_.assign = require('lodash.assign');
+// import * as hm from '..modules/hm.js'
+var hm = require('./modules/hm.js')
 
-var d3 = _.assign({},
-  require("d3-selection"),
-);
+var t;
+var isTimerGoing = false;
+var beenWarned = false;
+var hasPromisedToWorkWithMe = false;
 
 function init() {
     emailLink();
+    hm.run();
 }
 
 function emailLink() {
-    var link = d3.select('#email-link')
+    var link = document.querySelector('#email-link')
 
-    link.on('click', (e) => {
+    link.addEventListener('click', (e) => {
         e.preventDefault();
         console.log(click)
         link.text('sadbumblebee at gmail dot com')
-        // Show email after email >
-        
+        // Show email after email >   
     })
-
+    
 }
 
-init();
-
+window.onload = () => init()

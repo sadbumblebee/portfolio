@@ -1,0 +1,45 @@
+#hidden-message-container
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background-color rgba(0, 50, 51, .95)
+
+#hidden-message-contents
+    margin 0 auto
+    top 50%
+    transform translateY(-50%)
+    max-width 640px
+    font-family $sans
+    font-weight $heavy
+    font-size 2.2em
+    line-height 1.2em
+    color white
+    position relative 
+
+#hidden-message
+    text-shadow 0 0 4px rgba(0,0,0,.75)
+
+#hidden-button
+    border 1px solid white
+    float right
+    text-align right
+    cursor pointer
+    padding 5px 10px
+    transition all 250ms ease-in
+
+    &:after
+        content ''
+        clear both
+
+    &:hover
+        background-color white
+        color $primary
+
+.not-visible
+    display none
+
+@media all and (max-width: $column)
+    #hidden-message
+        padding 10px

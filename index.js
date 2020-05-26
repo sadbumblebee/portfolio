@@ -30,7 +30,7 @@ Metalsmith(__dirname)
 // Available in pug as the object: locals
   .metadata({
     title: "Daniel Wolfe, data journalist",
-    description: "Hey there metadata, nice to be a little preview text here. Whether this little thumb is in Slack or Twitter, I\'m happy to be here 👋.",
+    description: "Hey there metadata, nice to be a little preview text here. Whether this little card is in Slack or Twitter, I\'m happy to be here 👋.",
     thumb: '/assets/sadbumblebee-social.png',
     generator: "Metalsmith",
     url: "https://www.sadbumblebee.com/",
