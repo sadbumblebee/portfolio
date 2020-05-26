@@ -29,6 +29,10 @@ include includes/head.pug
                                     .byline--date!=feature.date
                                     .byline--source!=feature.source
                         .feature--copy!=feature.copy
+                        if feature.tags
+                            ul.feature--tags
+                                for tag in feature.tags
+                                    li.tag!=tag
                     if feature.annotation
                         a(
                             href!=feature.ann_url

@@ -106,7 +106,23 @@ p&.intro
     font-weight $medium
     line-height 1.3em
 
-@media all and (max-width: 1025px)
+.feature--tags
+    font-size 14px
+    font-family $sans-dos
+    text-align right
+    color $primary
+
+.tag
+    display inline-block
+    border 1px solid $secondary
+    padding 4px 10px
+    margin-right 5px
+    border-radius 25px
+
+    &:last-child
+        margin-right 0px
+
+@media all and (max-width: 1110px)
     .annotation
         position relative
         display none

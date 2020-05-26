@@ -7,7 +7,8 @@
         "url": "https://qz.com/1831607/the-most-used-emoji-on-venmo-during-the-coronavirus-pandemic/",
         "annotation": "Spoke on Marketplace about this piece!",
         "ann_url": "https://www.marketplace.org/2020/04/21/venmo-emoji-use-is-changing-in-the-coronavirus-economy/",
-        "copy": "Analyzed hundreds of thousands of public transactions on the payment app Venmo to see how 🏀, 🍕, and 🍣 gave way to 😷, ⛽️, and ♥️."
+        "copy": "Analyzed hundreds of thousands of public transactions on the payment app Venmo to see how 🏀, 🍕, and 🍣 gave way to 😷, ⛽️, and ♥️.",
+        "tags": ["Pandas", "JS"]
     },
     {
         "hed": "Listen to nature from eight of the US National Parks to stay calm and productive",
@@ -15,7 +16,8 @@
         "date": "March 2020",
         "source": "Quartz",
         "url": "https://qz.com/work/1823878/listen-to-nature-from-the-national-parks-to-stay-calm-and-focused/",
-        "copy": "The outdoors offer more than scenery. The sounds of these landscapes are restorative. Selections of thousands of hours of field recordings from the US National Parks allow us to visit the Golden Gate, Yellowstone, Sitka, and the Grand Tetons from our homes."
+        "copy": "The outdoors offer more than scenery. The sounds of these landscapes are restorative. Selections of thousands of hours of field recordings from the US National Parks allow us to visit the Golden Gate, Yellowstone, Sitka, and the Grand Tetons from our homes.",
+        "tags": ["Audition", "JS"]
     },
     {
         "hed": "Moby Dick: Or, the imprecision of genetic testing",
@@ -23,9 +25,10 @@
         "date": "April 2019",
         "source": "Quartz",
         "url": "https://qz.com/1582395/how-accurate-are-at-home-genetic-tests-like-23andme/",
-        "annotation": "Won a Society of News Design (SND) award for this.",
+        "annotation": "Won a Society of News Design (SND) award.",
         "ann_url": "https://www.snd.org/bodd/2020/02/10/2019-results/",
-        "copy": "This piece shows how we can use classic American literature to illustrate the shortcomings of direct-to-consumer genetic testing."
+        "copy": "This piece illustrates direct-to-consumer genetic testing's shortcomings using classic American literature.",
+        "tags": ["Bash", "Node", "AfterEffects", "Illustrator"]
     },
     {
         "hed": "Get a LEGO head to match any emotion",
@@ -35,7 +38,8 @@
         "url": "https://qz.com/quartzy/1546260/get-a-lego-minifigure-head-to-match-any-emotion/",
         "annotation": "This also won an award from SND.",
         "ann_url": "https://www.snd.org/bodd/2020/02/10/2019-results/",
-        "copy": "I used survey data on thousands of LEGO faces to make a bit of internet magic: An algorithm that matches your emotions to a LEGO face."
+        "copy": "I used survey data on thousands of LEGO faces to make a bit of internet magic: An algorithm that matches your emotions to a LEGO face.",
+        "tags": ["Python", "Photoshop", "JS"]
     },
     {
         "hed": "Mexico is illegally destroying protected mangrove trees to build an $8 billion oil refinery",
@@ -43,7 +47,8 @@
         "date": "March 2020",
         "source": "Quartz",
         "url": "https://qz.com/1807407/mexico-is-illegally-destroying-mangroves-to-build-lopez-obradors-oil-refinery/",
-        "copy": "Satellite images show a landscape razed to accommodate a controversial $8 billion oil refinery, done at the request of Mexico's president Andres Manuel Lopez Obrador. Was able to confirm <a href='https://twitter.com/mddeh' target='_blank'>Max de Haldevang's</a> on-the-ground reporting via remote sensing."
+        "copy": "Satellite images show a landscape razed to accommodate a controversial $8 billion oil refinery, built at the request of Mexico's president Andres Manuel Lopez Obrador. I confirmed <a href='https://twitter.com/mddeh' target='_blank'>Max de Haldevang's</a> reporting on the refinery via remote sensing.",
+        "tags": ["GDAL", "Photoshop", "Satellite imagery"]
     },
     {
         "hed": "Life expectancy in the United States, mapped by neighborhood",
@@ -51,7 +56,8 @@
         "date": "December 2020",
         "source": "Quartz",
         "url": "https://qz.com/1462111/map-what-story-does-your-neighborhoods-life-expectancy-tell/",
-        "copy": "Created this interactive map that reveals the health disparities between neighborhoods across the US using data from the CDC and analysis by <a href='https://twitter.com/dkopf' target='_blank'>Dan Kopf</a>"
+        "copy": "Created this interactive map that reveals the health disparities between neighborhoods across the US using data from the CDC and analysis by <a href='https://twitter.com/dkopf' target='_blank'>Dan Kopf</a>",
+        "tags": ["Mapbox", "QGIS", "JS"]
     },
     {
         "hed": "The fires in the Amazon were likely set intentionally",
@@ -59,7 +65,8 @@
         "date": "August 2019",
         "source": "Quartz",
         "url": "https://qz.com/1692804/fires-in-the-amazon-rainforests-were-likely-intentional/",
-        "copy": "Analysis using NASA Goes-16 East and VIIRS/FIRMS data show the Amazon rainforest burning at an unprecedented rate. These fires are likely to have been set by people attempting to clear land for cattle ranching."
+        "copy": "Analysis using NASA Goes-16 East and VIIRS/FIRMS data show the Amazon rainforest burning at an unprecedented rate. These fires were likely set by people clearing land for cattle ranching.",
+        "tags": ["Illustrator", "GDAL"]
     },
     {
         "hed": "The fight for water can push nations apart—or bring them together",
@@ -69,7 +76,8 @@
         "url": "https://qz.com/1353831/in-a-warming-world-the-fight-for-water-can-push-nations-apart-or-bring-them-together/",
         "annotation": "A citation of excellence from the Morley Safer Award for Outstanding Reporting 2019 and won bronze in long-form narrative from SND.",
         "ann_url": "https://morleysaferaward.briscoecenter.org/2019-morley-safer-award-winners/",
-        "copy": "With annotated illustrated maps, scroll-based design, and timelapse satellite imagery, this piece provides context to the disputes over underground water."
+        "copy": "With annotated illustrated maps, scroll-based design, and timelapse satellite imagery, this piece provides context to the disputes over underground water.",
+        "tags": ["Earth Engine", "Premiere", "GDAL", "JS"]
     },
     {
         "hed": "Oil exploration detection through satellite imagery",
@@ -77,7 +85,8 @@
         "date": "April 2018",
         "source": "Planet Labs",
         "url": "https://www.planet.com/insights/libya-oil-exploration/",
-        "copy": "Scroll-based interactive shows how Planet Labs discovered oil exploration in a remote corner of the Libyan Desert."
+        "copy": "This scroll-based interactive shows how Planet Labs discovered oil exploration in a remote corner of the Libyan Desert.",
+        "tags": ["JS", "GDAL"]
     },
     {
         "hed": "Apple HQ timelapse from space",
@@ -85,6 +94,7 @@
         "date": "June 2017",
         "source": "Planet Labs",
         "url": "https://youtu.be/mCZZXOmC-J8",
-        "copy": "Using high-resolution satellite imagery and AfterEffects, we can see the Apple Campus in Cupertino, CA go up in a blink."
+        "copy": "Using high-resolution satellite imagery and AfterEffects, we can see the Apple Campus in Cupertino, CA go up in a blink.",
+        "tags": ["AfterEffects", "Bash", "GDAL"]
     }
 ]

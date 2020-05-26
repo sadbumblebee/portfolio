@@ -250,27 +250,27 @@ body {
   margin: 0 auto;
   max-width: 640px;
 }
-ul {
+.about-links {
   text-transform: lowercase;
   padding: 0;
 }
-ul li {
+.about-links li {
   display: inline-block;
   margin-left: -0.15em;
 }
-ul li:first-child {
+.about-links li:first-child {
   margin: unset;
 }
-ul li::before {
+.about-links li::before {
   content: '\00a0';
 }
-ul li:first-child::before {
+.about-links li:first-child::before {
   content: '';
 }
-ul li::after {
+.about-links li::after {
   content: '\00a0.';
 }
-ul li:last-child::after {
+.about-links li:last-child::after {
   content: '';
 }
 footer p {
@@ -401,7 +401,23 @@ p.intro {
   font-weight: 400;
   line-height: 1.3em;
 }
-@media all and (max-width: 1025px) {
+.feature--tags {
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  text-align: right;
+  color: #003233;
+}
+.tag {
+  display: inline-block;
+  border: 1px solid #9bd1d1;
+  padding: 4px 10px;
+  margin-right: 5px;
+  border-radius: 25px;
+}
+.tag:last-child {
+  margin-right: 0px;
+}
+@media all and (max-width: 1110px) {
   .annotation {
     position: relative;
     display: none;
