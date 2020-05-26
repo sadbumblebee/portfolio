@@ -2,10 +2,8 @@
   "name": "sadbumblebee",
   "private": true,
   "dependencies": {
-    "d3-selection": "^1.4.1",
     "favico.js-slevomat": "^0.3.11",
     "fs-extra": "^9.0.0",
-    "lodash.assign": "^4.2.0",
     "metalsmith": "^2.1.0",
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-browserify": "^1.1.0",
