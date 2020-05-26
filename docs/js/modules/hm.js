@@ -14,10 +14,9 @@ function run() {
     // If you haven't come to this site before set default
     if (localStorage.getItem('sbb:seenMessage') == undefined) {
         localStorage.setItem('sbb:seenMessage', false);
-        hasPromisedToWorkWithMe = localStorage.getItem('sbb:seenMessage')
-    } else {
-
     }
+
+    hasPromisedToWorkWithMe = localStorage.getItem('sbb:seenMessage')
     messageButton()
     // Check hidden status every second
     window.setInterval(checkTabVisibility, 1000);
@@ -32,6 +31,7 @@ function messageButton() {
         // Some var for never showing again.
         clearTimedMessage();
         hasPromisedToWorkWithMe = true;
+        localStorage.setItem('sbb:seenMessage', hasPromisedToWorkWithMe);
     })
 }
 
