@@ -16,7 +16,6 @@ function emailLink() {
 
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log(click)
         link.text('sadbumblebee at gmail dot com')
         // Show email after email >   
     })

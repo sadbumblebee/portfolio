@@ -8,9 +8,16 @@ var beenWarned = false;
 var favicon = new Favico({
     animation: 'slide'
 });
-var hasPromisedToWorkWithMe = false;
+var hasPromisedToWorkWithMe;
 
 function run() {
+    // If you haven't come to this site before set default
+    if (localStorage.getItem('sbb:seenMessage') == undefined) {
+        localStorage.setItem('sbb:seenMessage', false);
+        hasPromisedToWorkWithMe = localStorage.getItem('sbb:seenMessage')
+    } else {
+
+    }
     messageButton()
     // Check hidden status every second
     window.setInterval(checkTabVisibility, 1000);
@@ -44,16 +51,13 @@ function checkTabVisibility() {
         }
     
         if (document[hidden]) {
-            console.log('hidden')
             timedMessage();
             // Set gvar on this too
             isTimerGoing = true;
         } else {
             // Reset Timer
-            console.log('not hidden')
             favicon.badge(0);
             if (isTimerGoing) {
-                console.log('clearing timer')
                 clearTimedMessage()
                 isTimerGoing = false;
             }
@@ -63,7 +67,6 @@ function checkTabVisibility() {
 };
 
 function timedMessage() {
-    console.log('starting timer!')
     // 1,800 seconds === 30 minutes
     t = window.setTimeout(sbbMessage, (1800*1000))
 };
