@@ -2,19 +2,19 @@
   "name": "sadbumblebee",
   "private": true,
   "dependencies": {
-    "favico.js-slevomat": "^0.3.11",
+    "favico.js": "^0.3.10"
+  },
+  "devDependencies": {
     "fs-extra": "^9.0.0",
-    "metalsmith": "^2.1.0",
+    "metalsmith": "^2.3.0",
     "metalsmith-browser-sync": "^1.1.1",
     "metalsmith-browserify": "^1.1.0",
     "metalsmith-ignore": "^1.0.0",
-    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-markdown": "^0.2.2",
     "metalsmith-permalinks": "^0.5.0",
     "metalsmith-pug": "^2.0.0",
-    "metalsmith-stylus": "^3.0.0"
-  },
-  "devDependencies": {
     "metalsmith-serve": "0.0.7",
+    "metalsmith-stylus": "^3.0.0",
     "metalsmith-watch": "^1.0.3"
   }
 }

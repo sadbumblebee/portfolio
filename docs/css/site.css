@@ -437,6 +437,13 @@ p.intro {
   .annotation.right:after {
     display: none;
   }
+  .annotation-emoji::after {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 1.2em;
+    content: '🏆';
+  }
 }
 @media all and (max-width: 640px) {
   p.intro {

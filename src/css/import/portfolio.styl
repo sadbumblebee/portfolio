@@ -10,6 +10,8 @@ p&.intro
     width 100%
     position relative
 
+// Award annotations
+
 .annotation
     position absolute
     font-family $sans-dos
@@ -141,6 +143,13 @@ p&.intro
 
             &:after
                 display none
+        
+    .annotation-emoji::after
+        position absolute
+        top 2px
+        right 2px
+        font-size 1.2em
+        content '🏆'
 
 @media all and (max-width: $column)
     p&.intro

@@ -6,10 +6,8 @@ const fsExtra = require('fs-extra');
 // RSS feed
 const RSS_URL = 'https://cms.qz.com/feed/author/dwolfeqz/'
 
-// Local content
-var content = JSON.parse(
-  fsExtra.readFileSync(__dirname + '/src/content.json')
-)
+// Local content 
+const content = require('./src/content.json')
 
 // Metalsmith
 var Metalsmith = require('metalsmith');

@@ -1,5 +1,5 @@
 // NPM modules
-var Favico = require('favico.js-slevomat');
+var Favico = require('favico.js');
 
 // Globals
 var t;
@@ -8,21 +8,26 @@ var beenWarned = false;
 var favicon = new Favico({
     animation: 'slide'
 });
-var hasPromisedToWorkWithMe;
+var hasPromisedToWorkWithMe = localStorage.getItem('sbb:seenMessage');
 
 function run() {
+    // Only run if you're on desktop
+
     // If you haven't come to this site before set default
     if (localStorage.getItem('sbb:seenMessage') == undefined) {
         localStorage.setItem('sbb:seenMessage', false);
+        hasPromisedToWorkWithMe = 'false';
     }
 
-    hasPromisedToWorkWithMe = localStorage.getItem('sbb:seenMessage')
-    messageButton()
-    // Check hidden status every second
-    window.setInterval(checkTabVisibility, 1000);
+    if (hasPromisedToWorkWithMe !== 'true') {
+        bindMessageButton()
+        // Check hidden status every second
+        window.setInterval(checkTabVisibility, 1000);
+    }
+    
 }
 
-function messageButton() {
+function bindMessageButton() {
     var button = document.querySelector('#hidden-button')
 
     button.addEventListener('click', () => {
@@ -30,45 +35,30 @@ function messageButton() {
         el.classList.add('not-visible');
         // Some var for never showing again.
         clearTimedMessage();
-        hasPromisedToWorkWithMe = true;
+        hasPromisedToWorkWithMe = 'true';
         localStorage.setItem('sbb:seenMessage', hasPromisedToWorkWithMe);
     })
 }
 
 function checkTabVisibility() {
-    var hidden, visibilityChange;
-    if (!hasPromisedToWorkWithMe) {
-
-        if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
-            hidden = "hidden";
-            visibilityChange = "visibilitychange";
-        } else if (typeof document.msHidden !== "undefined") {
-            hidden = "msHidden";
-            visibilityChange = "msvisibilitychange";
-        } else if (typeof document.webkitHidden !== "undefined") {
-            hidden = "webkitHidden";
-            visibilityChange = "webkitvisibilitychange";
-        }
-    
-        if (document[hidden]) {
+    if (hasPromisedToWorkWithMe === 'false') {
+        if (document.hidden && isTimerGoing !== true) {
             timedMessage();
             // Set gvar on this too
             isTimerGoing = true;
-        } else {
+        } else if (!document.hidden) {
             // Reset Timer
             favicon.badge(0);
             if (isTimerGoing) {
                 clearTimedMessage()
                 isTimerGoing = false;
             }
-        }
-
+        } else { return }
     }
 };
 
 function timedMessage() {
-    // 1,800 seconds === 30 minutes
-    t = window.setTimeout(sbbMessage, (1800*1000))
+    t = window.setTimeout(sbbMessage, (30 * 60 * 1000))
 };
 
 function clearTimedMessage() {

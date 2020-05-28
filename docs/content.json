@@ -28,7 +28,7 @@
         "annotation": "Won a Society of News Design (SND) award.",
         "ann_url": "https://www.snd.org/bodd/2020/02/10/2019-results/",
         "copy": "This piece illustrates direct-to-consumer genetic testing's shortcomings using classic American literature.",
-        "tags": ["Bash", "Node", "AfterEffects", "Illustrator"]
+        "tags": ["Node", "AfterEffects", "Illustrator"]
     },
     {
         "hed": "Get a LEGO head to match any emotion",
@@ -95,6 +95,6 @@
         "source": "Planet Labs",
         "url": "https://youtu.be/mCZZXOmC-J8",
         "copy": "Using high-resolution satellite imagery and AfterEffects, we can see the Apple Campus in Cupertino, CA go up in a blink.",
-        "tags": ["AfterEffects", "Bash", "GDAL"]
+        "tags": ["AfterEffects", "GDAL"]
     }
 ]
