@@ -1,5 +1,14 @@
 [
     {
+        "hed": "'It's going to disappear': A timeline of Trump's claims that Covid-19 will vanish",
+        "image": "disappears.gif",
+        "date": "October 2020",
+        "source": "CNN",
+        "url": "https://www.cnn.com/interactive/2020/10/politics/covid-disappearing-trump-comment-tracker/index.html",
+        "copy": "Vertical stream graph of daily new Covid-19 cases pegged to times Trump assured the public that the virus would go away.",
+        "tags": ["d3"]
+    },
+    {
         "hed": "The coronavirus epidemic is changing emoji usage on Venmo",
         "image": "venmo.png",
         "date": "April 2020",

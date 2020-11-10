@@ -18,11 +18,17 @@ var ignore = require('metalsmith-ignore');
 var stylus = require('metalsmith-stylus');
 var serve = require('metalsmith-serve');
 var browserSync = require('metalsmith-browser-sync');
-var browserify = require('metalsmith-browserify')
+var browserify  = require('metalsmith-browserify');
+var babel       = require('metalsmith-babel');
 
 // #################
 // ###   Build   ###
 // #################
+
+// Babel options
+var babelOptions = {
+  presets: [["@babel/preset-env", { "targets": "defaults" }]]
+};
 
 Metalsmith(__dirname)
 // Available in pug as the object: locals
@@ -58,11 +64,10 @@ Metalsmith(__dirname)
       'js/app.js',
       'js/portfolio.js'
     ],
-    'browserifyOptions': {
-      'debug': true
-    }
+    "suppressNotFoundError": true
   }))
   .use(serve())
-  .build(function (err, files) {
+  .use(babel(babelOptions))
+  .build(function(err, files) {
     if (err) { throw err; }
   });
