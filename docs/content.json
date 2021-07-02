@@ -11,6 +11,24 @@
         "tags": ["d3"]
     },
     {
+        "hed": "Tracking wildfires in the US",
+        "image": "wildfire.jpg",
+        "date": "July 2020 — Current",
+        "source": "CNN",
+        "url": "https://www.cnn.com/wildfires",
+        "copy": "For the most up-to-date wildfire origins, perimeters, hotspots, as well as smoke and air quality reports.",
+        "tags": ["JS", "Mapbox", "Node"]
+    },
+    {
+        "hed": "Tracking Covid-19 vaccines in the US",
+        "image": "vaccinations.jpg",
+        "date": "February 2021 — Current",
+        "source": "CNN",
+        "url": "https://www.cnn.com/interactive/2021/health/us-covid-vaccinations/",
+        "copy": "Follow how many people have been vaccinated and who is being left out.",
+        "tags": ["JS", "d3", "React"]
+    },
+    {
         "hed": "The coronavirus epidemic is changing emoji usage on Venmo",
         "image": "venmo.png",
         "date": "April 2020",
