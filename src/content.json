@@ -1,5 +1,16 @@
 [
     {
+        "hed": "The Southwest’s most important river is drying up",
+        "image": "megadrought.gif",
+        "date": "August 2021",
+        "source": "CNN",
+        "annotation": "2021 EPPY finalist for best use of data/infographics",
+        "ann_url": "https://www.eppyawards.com/",
+        "url": "https://www.cnn.com/interactive/2021/08/us/colorado-river-water-shortage/",
+        "copy": "First of their kind cuts are coming to the Colorado River, but who loses out isn't equal.",
+        "tags": ["JS", "Earth Engine", "ai2html"]
+    },
+    {
         "hed": "'It's going to disappear': A timeline of Trump's claims that Covid-19 will vanish",
         "image": "disappears.gif",
         "date": "October 2020",
