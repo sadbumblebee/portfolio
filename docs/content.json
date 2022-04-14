@@ -1,5 +1,16 @@
 [
     {
+        "hed": "Gray whales are dying along the Pacific coast",
+        "image": "whales.jpg",
+        "date": "March 2022",
+        "source": "CNN",
+        "annotation": "Pulitzer Center grant funded reporting project",
+        "ann_url": "https://pulitzercenter.org/people/daniel-wolfe",
+        "url": "https://www.cnn.com/interactive/2022/03/climate/gray-whale-pacific-arctic-climate-change/",
+        "copy": "Investigated and reported on climate change's role in the mysterious die off of this sentinel species.",
+        "tags": ["JS", "ai2html"]
+    },
+    {
         "hed": "The Southwest’s most important river is drying up",
         "image": "megadrought.gif",
         "date": "August 2021",
