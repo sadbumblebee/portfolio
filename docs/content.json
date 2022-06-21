@@ -11,6 +11,17 @@
         "tags": ["JS", "ai2html", "Photography", "QGIS"]
     },
     {
+        "hed": "Gen Z is growing up during a pandemic. They have a message for the rest of us",
+        "image": "gen-z-covid.jpg",
+        "date": "November 2021",
+        "source": "CNN",
+        "annotation": "2022 Webby Honoree for best individual editorial feature",
+        "ann_url": "https://winners.webbyawards.com/2022/websites-and-mobile-sites/features-design/best-individual-editorial-feature-media-company/213377/gen-z-is-growing-up-during-a-pandemic-they-have-a-message-for-the-rest-of-us",
+        "url": "https://www.cnn.com/interactive/2021/10/us/covid-pandemic-kids-wellness-commentary/",
+        "copy": "Collected and visualized personal testimony from teens living through the Covid-19 pandemic.",
+        "tags": ["JS"]
+    },
+    {
         "hed": "The Southwest’s most important river is drying up",
         "image": "megadrought.gif",
         "date": "August 2021",
